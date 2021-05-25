@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { useSelector } from "react-redux";
 import Review from "../../models/interfaces/review";
 import { selectReviews } from "../../reducers";
-import styles from "./index.cssmodule.scss";
+import "./index.cssmodule.scss";
 import ReviewCard from "./review-card";
 
 const Reviews: FunctionComponent = () => {
@@ -26,7 +26,7 @@ const Reviews: FunctionComponent = () => {
     );
   };
 
-  return <div className={styles.reviews}>{renderReviews(reviews)}</div>;
+  return <div className="reviews">{renderReviews(reviews)}</div>;
 };
 
 export default Reviews;

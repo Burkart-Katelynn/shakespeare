@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { Avatar, Card, Comment, Rate, Tooltip } from "antd";
 import moment from "moment";
-import styles from "./index.cssmodule.scss";
+import "./index.cssmodule.scss";
 
 interface Props {
   id: number;
@@ -18,19 +18,19 @@ const ReviewCard: FunctionComponent<Props> = (props) => {
         <p>
           <Rate disabled allowHalf defaultValue={props.rating} />
         </p>
-        <p className={styles.body}>{props.body}</p>
+        <p className="body">{props.body}</p>
       </div>
     );
   };
   return (
-    <div className={styles.review}>
+    <div className="review">
       <Card>
         <Comment
-          className={styles.comment}
+          className="comment"
           author={props.author}
           avatar={
             <Avatar
-              className={styles.avatar}
+              className="avatar"
               src="https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzgzMzkwNzMz/william-shakespeare-194895-1-402.jpg"
               alt="Shakespeare"
             />
