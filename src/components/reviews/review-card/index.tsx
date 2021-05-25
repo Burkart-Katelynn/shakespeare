@@ -37,9 +37,7 @@ const ReviewCard: FunctionComponent<Props> = (props) => {
           }
           content={renderBody()}
           datetime={
-            <Tooltip
-              title={moment(props.publish_date).format("YYYY-MM-DD HH:mm:ss")}
-            >
+            <Tooltip title={moment(props.publish_date).format("YYYY-MM-DD")}>
               <span>{moment(props.publish_date).fromNow()}</span>
             </Tooltip>
           }
