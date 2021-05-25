@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <PageHeader className="header" title="2B || !2B" subTitle="reviews" />
+      <PageHeader className="header" title="2B || !2B" />
       {reviewsLoading ? (
         <div className="loading">
           <Spin size="large" />

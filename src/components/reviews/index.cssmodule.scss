@@ -1,4 +1,26 @@
 @import "../../styles/variables.scss";
 
 .reviews {
+  .noReviews {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: whitesmoke;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+
+    .ant-pagination-item,
+    .ant-pagination-item-link {
+      background-color: white;
+      border: none;
+    }
+  }
 }
